@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Changing Website</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-size: 36px;
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+	<script>
+		function changeColor() {
+			var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+			var randomColor = colors[Math.floor(Math.random() * colors.length)];
+			document.body.style.backgroundColor = randomColor;
+		}
+		setInterval(changeColor, 10);
+	</script>
+</head>
+<body>
+	<p>Colors will change every 10 milliseconds!</p>
+</body>
+</html>
+
